@@ -5,7 +5,7 @@ pipeline {
         stage('ci') {
             steps {
                 zip -r khyathi.zip ./index.html
-                aws s3 cp khyathi.zip s3://"mondaycicd"/
+                aws s3 cp khyathi.zip s3://mondaycicd/
 
             }
         }
